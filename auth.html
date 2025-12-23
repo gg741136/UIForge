@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UIForge – by GoyalSoft || login</title>
+  <link rel="icon" href="./file_00000000dc5c7208ab16eb8666dfae0f.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="https://goyalsoft.netlify.app/Styles/alert.css">
+</head>
+<body>
+  <div class="container auth">
+    <div id="login" class="card login">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" placeholder="Password" id="password">
+      <button class="btn" onclick="login()">Login</button>
+      <div class="two">
+        <button class="btn secondary thirdly" onclick="hide('login'); hide('reset'); show('register')">Register</button>
+        <button class="btn secondary thirdly" onclick="hide('login'); hide('register'); show('reset')">Forget?</button>
+      </div>
+    </div>
+    
+    <div id="register" class="card register hidden">
+      <h2>Register</h2>
+      <input type="email" placeholder="Email" id="remail">
+      <input type="password" placeholder="Password" id="rpassword">
+      <input type="password" placeholder="Confirm Password" id="rcpassword">
+      <button class="btn" onclick="register()">Register</button>
+      <button class="btn secondary" onclick="hide('register'); hide('reset'); show('login')">Login</button>
+    </div>
+    
+    <div id="reset" class="card reset hidden">
+      <h2>Reset Password</h2>
+      <input type="email" placeholder="Email" id="rsemail">
+      <button class="btn" onclick="send()">Reset</button>
+      <div class="two">
+        <button class="btn secondary thirdly" onclick="hide('register'); hide('reset'); show('login')">Login</button>
+        <button class="btn secondary thirdly" onclick="hide('login'); hide('reset'); show('register')">Register</button>
+      </div>
+    </div>
+  </div>
+  <div id="alertBox"></div>
+  <script src="./alert.js"></script>
+  <script src="./firebase.js"></script>
+  <script src="./auth.js"></script>
+</body>
+</html>

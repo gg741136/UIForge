@@ -1,0 +1,155 @@
+:root{
+  --bg:#000;
+  --card:#111;
+  --neon:#00ffd5;
+  --text:#eaeaea;
+  --muted:#9b9b9b;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,system-ui,sans-serif;
+  height: 100%;
+}
+
+.container{
+  max-width:420px;
+  margin:auto;
+  padding:16px;
+}
+
+.thirdly{
+  width: 45%;
+  box-shadow: 1px 4px 12px #8ea8a5;
+}
+
+.two{
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.container.auth{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.hidden{
+  display: none;
+}
+
+.card{
+  background:linear-gradient(180deg,#151515,#0b0b0b);
+  border-radius:18px;
+  padding:18px;
+  margin-bottom:18px;
+  box-shadow:0 0 14px #c4d3d1;
+}
+
+h1,h2,h3{margin:0 0 10px}
+
+input,textarea{
+  width:100%;
+  background:#0f0f0f;
+  color:var(--text);
+  border:1px solid #222;
+  border-radius:14px;
+  padding:14px;
+  margin-top:10px;
+  font-size:15px;
+}
+
+input:focus,textarea:focus{
+  outline:none;
+  border-color:var(--neon);
+  box-shadow:0 0 10px #00ffd540;
+}
+
+.upi-box{
+  background: #111;
+  border: 1px solid #00ffd5;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.upi-box span{
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.upi-box strong{
+  font-size: 18px;
+  color: #00ffd5;
+}
+
+.upi-box button{
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: none;
+  background: #00ffd5;
+  color: #000;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn{
+  width:100%;
+  margin-top:14px;
+  padding:14px;
+  background:var(--neon);
+  color:#000;
+  border:none;
+  border-radius:40px;
+  font-weight:700;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.btn.danger{
+  background: #ff3b3b;
+  color: #fff;
+}
+
+.btn.secondary{
+  background:#1c1c1c;
+  color:var(--text);
+  border:1px solid #333;
+}
+
+.mockup{
+  background:#0e0e0e;
+  border-radius:16px;
+  padding:20px;
+  text-align:center;
+}
+
+.mockup h3{color:var(--neon)}
+
+.ad{
+  background:#0c0c0c;
+  border:1px dashed #333;
+  border-radius:14px;
+  padding:12px;
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+}
+
+/* ✅ TABLET */
+@media(min-width:768px){
+  .container{max-width:600px}
+}
+
+/* ✅ DESKTOP */
+@media(min-width:1024px){
+  .container{max-width:720px}
+}

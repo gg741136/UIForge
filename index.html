@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UIForge – by GoyalSoft</title>
+  <link rel="icon" href="./file_00000000dc5c7208ab16eb8666dfae0f.png">
+  <link rel="stylesheet" href="./style.css"></title>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="ad">Adsense Top Banner</div>
+    <div id="mockup" class="card mockup">
+      <h3 id="title">App Title</h3>
+      <p id="desc">Description here</p>
+    </div>
+    
+    <div class="card">
+      <input oninput="document.getElementById('title').innerText=this.value" placeholder="Title">
+      <textarea oninput="document.getElementById('desc').innerText=this.value" placeholder="Description"></textarea>
+      <button class="btn" onclick="download()">Download Image</button>
+      <button class="btn secondary" onclick="location.href='./premium.html'">Upgrade To Premium</button>
+    </div>
+    <div id="ads" class="ad">Adsense Bottom Banner</div>
+  </div>
+  
+  <script src="./firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
