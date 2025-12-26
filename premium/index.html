@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UIForge – by GoyalSoft</title>
+  <link rel="icon" href="../sources/logo.png">
+  <link rel="stylesheet" href="../sources/style.css"></title>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="../sources/alert.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="ad">Adsense Top Banner</div>
+    <div class="card">
+      <h2>Upgrade To Premium</h2>
+      <p>Pay ₹49/ Month Only</p>
+      
+      <div class="upi-box">
+        <span>Upi id</span>
+        <strong id="upiid">madhubala5422@okicici</strong>
+        <button onclick="copyUrl()">Copy</button>
+      </div>
+      
+      <img style="height: 300px ; width: 300px; border-radius: 10px" src="../sources/GooglePay_QR.png" id="upiQr" alt="Google Pay QR">
+      <button onclick="download()" class="btn secondary">Download Qr</button>
+      
+      <p class="hint">Enter Transaction ID and Amount Paid to activate premium. Will send you update of your premium to your email in spam or inbox</p>
+      
+      <input id="txn" placeholder="Transaction ID">
+      <input type="number" id="amount" placeholder="Amount Paid By you">
+      <button class="btn" onclick="pay()">Submit</button>
+    </div>
+    <div id="ads" class="ad">Adsense Bottom Banner</div>
+  </div>
+  
+  <div id="alertBox"></div>
+  <script src="../sources/alert.js"></script>
+  <script src="../sources/function.js"></script>
+  <script src="./upi.js"></script>
+</body>
+</html>
