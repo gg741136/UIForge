@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UIForge – by GoyalSoft || verify</title>
+  <link rel="icon" href="../sources/logo.png">
+  <link rel="stylesheet" href="../sources/style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <link rel="stylesheet" href="../sources/alert.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="container auth">
+    <div class="ad">Adsense Top Banner</div>
+    <div class="card verify" id="verify">
+      <h1 style="font-size: 100px; color: var(--neon)" class="material-icons">mark_as_unread</h1>
+      <p id="desc">We have Sended You A verification email to <strong id="email1" style="color: var(--neon)">jashangoyal@gmail.com</strong>. Please check you inbix and spam folder. If doesn't recieved click Resend. If verified click check.</p>
+      <div class="two">
+        <button onclick="send()" class="btn secondary thirdly">Resend</button>
+        <button class="btn secondary thirdly" onclick="check()">Check</button>
+      </div>
+    </div>
+    <div id="ads" class="ad">Adsense Bottom Banner</div>
+  </div>
+  
+  <div id="alertBox"></div>
+  
+  <script src="../sources/alert.js"></script>
+  <script src="../sources/function.js"></script>
+  <script src="./verify.js"></script>
+</body>
+</html>
