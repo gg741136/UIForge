@@ -1,0 +1,116 @@
+#alertBox{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.alert{
+  min-width: 240px;
+  padding: 12px 14px;
+  background: #1a1a1a;
+  border-left: 4px solid #777;
+  border-radius: 8px;
+  color: #e5e5e5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  opacity: 0;
+  transform: translateX(20px);
+  transition: 0.3s ease;
+}
+
+.alert.show{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.success{
+  border-color: #35d67a;
+}
+
+.error{
+  border-color: #ff4b4b;
+}
+
+.warning{
+  border-color: #f5b942;
+}
+
+.info{
+  border-color: #4cb3ff;
+}
+
+.closeBtn{
+  float: right;
+  cursor: pointer;
+  margin-left: 8px;
+  color: #999;
+  font-weight: bold;
+}
+
+.closeBtn:hover{
+  color: white;
+}
+
+#confirmOverlay{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  pointer-events: all;
+}
+
+#confirmBox{
+  background: #1a1a1a;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.25s ease;
+}
+
+#confirmBox.show{
+  opacity: 1;
+  transform: scale(1);
+}
+
+#confirmMessage{
+  color: #e5e5e5;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.btnArea{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.confirmBtn{
+  padding: 8px 16px;
+  border: none;
+  width: 45%;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #ddd;
+  cursor: pointer;
+}
+
+.confirmBtn:hover{
+  background: #444;
+}
+
+.okBtn{
+  background: #2778ff;
+}
+
+.okBtn:hover{
+  background: #3a86ff;
+}
