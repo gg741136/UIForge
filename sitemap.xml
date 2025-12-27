@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ROOT HOME -->
+  <url>
+    <loc>https://uiforge-gs.netlify.app/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- MAIN TOOL PAGE -->
+  <url>
+    <loc>https://uiforge-gs.netlify.app/index.html</loc>
+    <priority>0.9</priority>
+    <changefreq>daily</changefreq>
+  </url>
+
+  <!-- AUTH -->
+  <url>
+    <loc>https://uiforge-gs.netlify.app/auth/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://uiforge-gs.netlify.app/auth/verify.html</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- HANDLER / TOOL -->
+  <url>
+    <loc>https://uiforge-gs.netlify.app/handler/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- PREMIUM -->
+  <url>
+    <loc>https://uiforge-gs.netlify.app/premium/</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>
