@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /admin/
 
-Sitemap: https://uiforge-gs.netlify.app/sitemap.xml
+Sitemap: https://ui-forge-gs.vercel.app/sitemap.xml
